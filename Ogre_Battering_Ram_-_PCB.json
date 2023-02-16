@@ -1,0 +1,172 @@
+{
+	"siteVersion": "1.176.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "ProjectCriticalBastards",
+				"abbreviation": "PCB",
+				"full": "Project Critical Bastards",
+				"url": "",
+				"authors": [
+					"Fergulho"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1676589360,
+		"dateLastModified": 1676589360
+	},
+	"monster": [
+		{
+			"name": "Ogre Battering Ram - PCB",
+			"source": "ProjectCriticalBastards",
+			"page": 200,
+			"size": [
+				"L"
+			],
+			"type": "giant",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "Typically ",
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"{@item hide armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 76,
+				"formula": "9d10 + 27"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 19,
+			"dex": 8,
+			"con": 16,
+			"int": 5,
+			"wis": 7,
+			"cha": 7,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"languages": [
+				"Common",
+				"Giant"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The ogre deals double damage to objects and structures."
+					]
+				},
+				{
+					"name": "Cinammita",
+					"entries": [
+						"Utilizada por marciais, a versão em pílula da Cinammita confere força e reflexos sobre humanos.",
+						"\tDuração: 30 minutos",
+						"Taxa de Intoxicação: 3",
+						"Efeitos primários: ",
+						"\tGarante as seguintes características ao usuário:",
+						"Agressividade: Como ação bônus, é possível andar metade do deslocamento e realizar um ataque corpo-a-corpo.",
+						"\tBrutalidade: Os ataques que usam força do usuário causam um dado de dano adicional.",
+						"\tFalsa Vitalidade: O usuário recebe vida temporária igual ao seu número de dados de vida.",
+						"\tForça Efêmera: O usuário possui vantagens em testes e salvaguardas utilizando força.",
+						"Efeito secundário:",
+						"Salvaguarda de Constituição = 10 + (Quantidade de doses consumidas nas últimas 24h x Taxa de intoxicação)",
+						"Nóia: O usuário possui desvantagem em testes e salvaguarda utilizando carisma e inteligência.",
+						"Desfocado: O usuário possui desvantagem em testes de concentração."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The ogre makes two Bash attacks."
+					]
+				},
+				{
+					"name": "Bash",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) bludgeoning damage, and the ogre can push the target 5 feet away if the target is Huge or smaller."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Block the Path",
+					"entries": [
+						"When a creature enters a space within 5 feet of the ogre, the ogre makes a Bash attack against that creature. If the attack hits, the target's speed is reduced to 0 until the start of the ogre's next turn."
+					]
+				}
+			],
+			"environment": [
+				"grassland",
+				"hill",
+				"mountain"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/ogre-battering-ram.mp3"
+			},
+			"traitTags": [
+				"Siege Monster"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MPMM/Ogre Battering Ram.png",
+			"fluff": {
+				"name": "Ogre Battering Ram",
+				"source": "MPMM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MPMM/Ogre Battering Ram.webp"
+						}
+					}
+				],
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"An ogre battering ram carries an enormous club that's primarily used for bashing doors into kindling but also works well for smashing foes. These ogres are drilled in two simple tasks: rushing forward to shatter enemy fortifications and using their weapons to force an advancing enemy to halt."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Ogres of War",
+						"entries": [
+							"Ogres love to rush headlong into battle, but with enough time and patience, some of them learn to carry out specialized missions. The names they are given—the battering ram, the bolt launcher, the chain brute, and the howdah—reflect their particular functions. These jobs are tailored to take advantage of an ogre's strengths."
+						]
+					}
+				]
+			}
+		}
+	]
+}
