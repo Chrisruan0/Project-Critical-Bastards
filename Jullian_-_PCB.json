@@ -1,0 +1,197 @@
+{
+	"siteVersion": "1.177.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "ProjectCriticalBastards",
+				"abbreviation": "PCB",
+				"full": "Project Critical Bastards",
+				"url": "",
+				"authors": [
+					"Fergulho"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1677276838,
+		"dateLastModified": 1677276838
+	},
+	"monster": [
+		{
+			"name": "Jullian - PCB",
+			"source": "ProjectCriticalBastards",
+			"page": 347,
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 14",
+				"average": 77
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 12,
+			"cha": 17,
+			"save": {
+				"int": "+3",
+				"wis": "+4"
+			},
+			"skill": {
+				"arcana": "+3",
+				"history": "+3"
+			},
+			"passive": 11,
+			"languages": [
+				"any four languages"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The mage is a 7th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The Jullian has the following sorcerer spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell burning hands}",
+								"{@spell detect magic}",
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell misty step}",
+								"{@spell suggestion}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}",
+								"{@spell fly}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell fire shield}",
+								"{@spell summon elemental|TCE}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Familiars",
+					"entries": [
+						"Any spellcaster that can cast the {@spell find familiar} spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a {@creature crawling claw}, {@creature imp}, {@creature pseudodragon}, or {@creature quasit}."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/mage.mp3"
+			},
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F",
+				"O"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			],
+			"hasFluff": true,
+			"tokenUrl": "https://i.imgur.com/yMUgIxF.png",
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Mages spend their lives in the study and practice of magic. Good-aligned mages offer counsel to nobles and others in power, while evil mages dwell in isolated sites to perform unspeakable experiments without interference."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/564x/a3/f1/3f/a3f13fe5345da732d2e5884a77a49140.jpg"
+						}
+					}
+				]
+			},
+			"resist": [
+				"fire"
+			]
+		}
+	]
+}
