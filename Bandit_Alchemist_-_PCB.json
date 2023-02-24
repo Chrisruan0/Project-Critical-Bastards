@@ -1,0 +1,186 @@
+{
+	"siteVersion": "1.177.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "ProjectCriticalBastards",
+				"abbreviation": "PCB",
+				"full": "Project Critical Bastards",
+				"url": "",
+				"authors": [
+					"Fergulho"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1677274507,
+		"dateLastModified": 1677274507
+	},
+	"monster": [
+		{
+			"name": "Bandit Alchemist - PCB",
+			"size": [
+				"M"
+			],
+			"environment": [
+				"ruins",
+				"underground",
+				"urban"
+			],
+			"type": "humanoid",
+			"source": "ProjectCriticalBastards",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d6 + 20",
+				"average": 55
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 7,
+			"dex": 16,
+			"con": 15,
+			"int": 16,
+			"wis": 9,
+			"cha": 8,
+			"save": {
+				"dex": "+5"
+			},
+			"skill": {
+				"arcana": "+5",
+				"medicine": "+3"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"languages": [
+				"Common."
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Apothecary",
+					"entries": [
+						"As a bonus action the Bandit Alchemist can select one of the following damage types: acid, cold, or fire. Until it uses this action again, the Bandit Alchemist has resistance to the chosen damage type. Additionally, the Bandit Alchemist is proficient with a poisoner's kit."
+					]
+				},
+				{
+					"name": "Alchemical agility",
+					"entries": [
+						"Bandit Alchemist can apply poison to a weapon or piece of ammunition as a bonus action, instead of an action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Bandit Alchemist makes two attacks."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage plus 5 ({@damage 2d4}) poison damage."
+					]
+				},
+				{
+					"name": "Acid Viel",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 20 ft., one target. {@h}7 ({@damage 2d6}) acid damage."
+					]
+				},
+				{
+					"name": "Alchemical Fire",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 20 ft., one target. {@h}2 ({@damage 1d4}) fire damage at the start of each of the target's turns. A creature can end this damage by using its action to make a successful {@dc 14} Dexterity check to extinguish the flames."
+					]
+				},
+				{
+					"name": "Alchemical Protection (Recharge after a Short or Long Rest)",
+					"entries": [
+						"The Bandit Alchemist chooses up to six allied creatures within 10 feet. It releases alchemical vapors that grant those allies resistance to poison damage for 10 minutes. Instead of poison damage, the Bandit Alchemist can grant resistance to the damage type currently in effect for its Apothecary trait."
+					]
+				},
+				{
+					"name": "Explosive Flask {@recharge 5}",
+					"entries": [
+						"The Bandit Alchemist throws a flask of volatile substances at a point within 30 feet. The flask explodes in a 15-foot radius. Creatures in the area take 17 ({@damage 5d6}) poison damage and are {@condition poisoned} for 1 minute, or take half damage and are not {@condition poisoned} with a successful {@dc 14} Dexterity saving throw. A {@condition poisoned} creature repeats the saving throw at the end of each of its turns, ending the {@condition poisoned} condition on a success. Instead of poison damage, the Bandit Alchemist can deal the damage type currently in effect for its Apothecary trait."
+					]
+				}
+			],
+			"page": 261,
+			"tokenUrl": "https://i.imgur.com/hLIPZxT.png",
+			"fluff": {
+				"entries": [
+					"{@i This slight, reptilian humanoid is bedecked with ceramic flasks and glass vials. An acrid reek follows in the creature's wake.}",
+					"Kobold alchemists are usually smelled before they are seen, thanks to the apothecary's store of chemicals and poisons they carry. Alchemists often sport mottled and discolored scales and skin, caused by the caustic nature of their obsessions. They raid alchemy shops and magical laboratories to gather more material to fuel their reckless experiments.",
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Dangerous Assets",
+										"entries": [
+											"Alchemists can be a great boon to their clan, but at a cost. Not only do the alchemists require rare, expensive, and often dangerous substances to ply their trade, they tend to be a little unhinged. Their experiments yield powerful weapons and defensive concoctions that can save many kobold lives, but the destruction caused by an experiment gone awry can be terrible."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/736x/4d/25/3e/4d253e6f7a303f9b91fb183a7bf57c8b.jpg"
+						}
+					}
+				]
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"A",
+				"F",
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"AOE"
+			]
+		}
+	]
+}
