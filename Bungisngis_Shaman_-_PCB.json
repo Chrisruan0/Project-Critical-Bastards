@@ -1,0 +1,204 @@
+{
+	"siteVersion": "1.177.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "ProjectCriticalBastards",
+				"abbreviation": "PCB",
+				"full": "Project Critical Bastards",
+				"url": "",
+				"authors": [
+					"Fergulho"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1678631889,
+		"dateLastModified": 1678631889
+	},
+	"monster": [
+		{
+			"source": "ProjectCriticalBastards",
+			"page": 41,
+			"name": "Bungisngis Shaman - PCB",
+			"environment": [
+				"feywild",
+				"forest",
+				"hill",
+				"jungle/Tropical",
+				"mountain"
+			],
+			"size": [
+				"H"
+			],
+			"type": "giant",
+			"alignmentPrefix": "typically ",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d12 + 78",
+				"average": 195
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 22,
+			"dex": 12,
+			"con": 22,
+			"int": 5,
+			"wis": 14,
+			"cha": 14,
+			"skill": {
+				"stealth": "+9"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"passive": 12,
+			"languages": [
+				"Giant"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"cr": "11",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the bungisngis moves at least 20 feet straight toward a target and then hits it with a Tusk attack on the same turn, the target takes an extra 10 ({@damage 3d6}) slashing damage. If the target is a creature, it must succeed on a {@dc 18} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Horrid Giggling",
+					"entries": [
+						"The bungisngis incessantly emits a magical, infectious giggling sound. When a creature starts its turn within 30 feet of the bungisngis and is able to hear the bungisngis, the creature must succeed on a {@dc 14} Wisdom saving throw, unless the bungisngis is {@condition incapacitated}. On a failed save, the target is {@condition charmed} until the start of its next turn or until it takes damage. While {@condition charmed} in this way, the target falls {@condition prone} and starts giggling uncontrollably, becoming {@condition incapacitated} and unable to stand up. A creature with an Intelligence score of 4 or less isn't affected.",
+						"If a creature's saving throw is successful, the creature is immune to the bungisngis's Horrid Giggling for the next 24 hours."
+					]
+				},
+				{
+					"name": "Poor Depth Perception",
+					"entries": [
+						"The bungisngis has disadvantage on any attack roll against a target more than 30 feet away."
+					]
+				},
+				{
+					"name": "Stone Camouflage",
+					"entries": [
+						"The bungisngis has advantage on Dexterity ({@skill Stealth}) checks made to hide in rocky terrain."
+					]
+				}
+			],
+			"traitTags": [
+				"Charge"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The bungisngis makes three attacks. one with its Tusk and two with its Claws."
+					]
+				},
+				{
+					"name": "Tusk",
+					"entries": [
+						"{@atk mw} +10 to hit, reach 5 ft., one target. {@h}16 ({@damage 3d6 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} +10 to hit, reach 10 ft., one target. {@h}16 ({@damage 3d6 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} +10 to hit, range 30/120 ft., one target. {@h}28 ({@damage 4d10 + 6}) bludgeoning damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"spellcasting": [
+				{
+					"type": "spellcasting",
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The bungisngis casts one of the following spells using Wisdom as the spellcasting ability (save {@dc 14}, {@hit 6} to hit with spell attacks):"
+					],
+					"ability": "wis",
+					"displayAs": "action",
+					"daily": {
+						"1e": [
+							"{@spell erupting earth|XGE}",
+							"{@spell healing word}",
+							"{@spell ice storm}",
+							"{@spell lightning bolt}",
+							"{@spell meld into stone}",
+							"{@spell spike growth}",
+							"{@spell stoneskin}*",
+							"{@spell thunderwave}"
+						]
+					},
+					"will": [
+						"{@spell druidcraft}",
+						"{@spell guidance}",
+						"{@spell mending}",
+						"{@spell produce flame} ({@damage 2d8})"
+					],
+					"footerEntries": [
+						"{@i *The bungisngis casts this spell on itself before combat.}"
+					]
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"conditionInflictSpell": [
+				"prone"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"conditionInflict": [
+				"charmed",
+				"prone"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded3/creature/token/Bungisngis%20Shaman%20%28Token%29.png",
+			"fluff": {},
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"F",
+				"L",
+				"P",
+				"T"
+			]
+		}
+	]
+}
