@@ -1,0 +1,239 @@
+{
+	"siteVersion": "1.178.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "ProjectCriticalBastards",
+				"abbreviation": "PCB",
+				"full": "Project Critical Bastards",
+				"url": "",
+				"authors": [
+					"Fergulho"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1681510272,
+		"dateLastModified": 1681510272
+	},
+	"monster": [
+		{
+			"name": "Cerberus - PCB",
+			"shortName": "Rogue",
+			"source": "ProjectCriticalBastards",
+			"page": 194,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item leather armor}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "26d8 + 52",
+				"average": 170
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 8,
+			"dex": 20,
+			"con": 14,
+			"int": 12,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"wis": "+5",
+				"int": "+4",
+				"dex": "+10"
+			},
+			"skill": {
+				"deception": "+6",
+				"perception": "+5",
+				"stealth": "+10",
+				"acrobatics": "+10",
+				"survival": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"telepathy 60 ft."
+			],
+			"cr": "15",
+			"trait": [
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"On each of its turns, the rogue can use a bonus action to take the Dash, Disengage, or Hide action."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the rogue is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the rogue instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"The rogue deals an extra 22 ({@damage 6d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the rogue that isn't incapacitated and the rogue doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Legendary Resistance (2/Day)",
+					"entries": [
+						"If the rogue fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The rogue makes two attacks with its Soul Knives or Rend Mind if available. It can use one of the attacks to use Psychic Teleportation once."
+					]
+				},
+				{
+					"name": "Soul Knives",
+					"entries": [
+						"{@atk mw,rw} {@hit 10} to hit, reach 5 ft. or range 60 ft., one target. {@h} 10 ({@damage 2d4 + 5}) psychic damage."
+					]
+				},
+				{
+					"name": "Soul Knives (Poisoner)",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d4 + 5}) psychic damage, and the target must make a {@dc 16} Constitution saving throw, taking 14 ({@damage 4d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Rend Mind {@recharge 6}",
+					"entries": [
+						"{@atk mw,rw} {@hit 10} to hit, reach 5 ft. or range 60 ft., one target. {@h} 10 ({@damage 2d4 + 5}) psychic damage and the target must succeed on a {@dc 16} Wisdom saving throw or become {@condition stunned} for 1 minute. The target can repeat the saving throw at the end of each of its turns."
+					]
+				},
+				{
+					"name": "Psychic Teleportation",
+					"entries": [
+						"The rogue throws its soul knife at an unoccupied space it can see up to 60 feet away then teleports to that space picking up the knife."
+					]
+				},
+				{
+					"name": "Psychic Veil",
+					"entries": [
+						"The rogue magically becomes {@condition invisible}, along with anything it is wearing or carrying for 1 hour or until it dismisses this effect (no action required). This invisibility ends early immediately after it deals damage to a creature or force a creature to make a saving throw."
+					]
+				},
+				{
+					"name": "Hellraiser's Cloak (1/Day)",
+					"entries": [
+						"The rogue summons {@dice 3} Hell Hound (Bound). The Hell Hound appear in unoccupied spaces within 30 feet of the rogue and acts as its allies. The Hell Hound act right after the rogue on the same initiative count and fight until they're destroyed. They remain for 1 hour, until they or the rogue dies, or until the rogue dismisses them as an action."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Blade Parry",
+					"entries": [
+						"As a bonus action you can project your blades and prepare them to parry attacks. You gain a +2 bonus to AC until the start of your next turn or until you are {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Blade Flurry",
+					"entries": [
+						"After taking the attack action the rogue can make two additional attacks as a bonus action."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Uncanny Dodge",
+					"entries": [
+						"The rogue halves the damage that it takes from an attack that hits it. The rogue must be able to see the attacker."
+					]
+				},
+				{
+					"name": "Binding chain.",
+					"entries": [
+						"When the rogue is hit by an attack, one allied Hell Hound within 30 feet of the roguecan use reaction to take half damage."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"urban"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/535237491314262036/1093142984893153320/ernesto-irawan-virgil-01-jpg.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://media.discordapp.net/attachments/535237491314262036/1096507262434033754/Cerberus_caes_Token.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/kenku.mp3"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Sneak Attack"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TP"
+			],
+			"damageTags": [
+				"I",
+				"Y"
+			],
+			"miscTags": [
+				"RW",
+				"MW"
+			],
+			"conditionInflict": [
+				"invisible",
+				"stunned"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"legendary": [
+				{
+					"name": "Shift",
+					"entries": [
+						"The grandfather of assassins moves up to half its speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Psychic Veil Action (Costs 2 Actions)",
+					"entries": [
+						"The rogue uses its Psychic Veil action."
+					]
+				},
+				{
+					"name": "Apparated Soul Knife (Costs 2 Actions)",
+					"entries": [
+						"The rogue makes a melee or ranged attack with a soul knife. Alternatively, the rogue can use his Psychic Teleport action."
+					]
+				}
+			],
+			"resist": [
+				"poison"
+			]
+		}
+	]
+}
