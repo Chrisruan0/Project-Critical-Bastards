@@ -1,0 +1,300 @@
+{
+	"siteVersion": "1.178.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "ProjectCriticalBastards",
+				"abbreviation": "PCB",
+				"full": "Project: Critical Bastards",
+				"url": "",
+				"authors": [
+					"Fergulho"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1681502196,
+		"dateLastModified": 1681502196
+	},
+	"monster": [
+		{
+			"name": "Kallazandra - PCB",
+			"source": "ProjectCriticalBastards",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 120,
+				"formula": "16d8 + 48"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 16,
+			"int": 12,
+			"wis": 12,
+			"cha": 19,
+			"save": {
+				"int": "+5",
+				"wis": "+5",
+				"cha": "+8"
+			},
+			"skill": {
+				"arcana": "+5",
+				"deception": "+8",
+				"perception": "+5",
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"languages": [
+				"Aquan",
+				"Common"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Kallazandra is a 15th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It has the following sorcerer spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}",
+								"{@spell mending}",
+								"{@spell minor illusion}",
+								"{@spell poison spray}",
+								"{@spell shape water|XGE}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell charm person}",
+								"{@spell create or destroy water}",
+								"{@spell fog cloud}",
+								"{@spell shield}",
+								"{@spell thunderwave}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell gust of wind}",
+								"{@spell hold person}",
+								"{@spell misty step}",
+								"{@spell silence}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell fireball}",
+								"{@spell lightning bolt}",
+								"{@spell sleet storm}",
+								"{@spell thunder step|XGE}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell control water}",
+								"{@spell dimension door}",
+								"{@spell summon elemental spirit|UA2020SpellsAndMagicTattoos}",
+								"{@spell vitriolic sphere|XGE}",
+								"{@spell watery sphere|XGE}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Bigby's hand}",
+								"{@spell cone of cold}",
+								"{@spell maelstrom|XGE}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell true seeing}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"Kallazandra can breathe air and water."
+					]
+				},
+				{
+					"name": "Sorcery Points",
+					"entries": [
+						"The Kallazandra has 12 sorcery points. It can spend 1 or more sorcery points as a bonus action to gain one of the following benefits:",
+						"Heightened Spell: When the Kallazandra casts a spell that forces a creature to make a saving throw to resist the spell's effects, the Kallazandra can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw against the spell.",
+						"Quickened Spell: When the Kallazandra casts a spell that has a casting time of 1 action, the Kallazandra can spend 2 sorcery points to change the casting time to 1 bonus action for this casting."
+					]
+				},
+				{
+					"name": "Tentacles of the Deep (3/Day)",
+					"entries": [
+						"As a bonus action, you create a 10-foot-long tentacle at a point you can see within 60 feet of you. When you create the tentacle, you can make a melee spell attack against one creature within 10 feet of it. As a bonus action on your turn, you can move the tentacle up to 30 feet and repeat the attack."
+					]
+				},
+				{
+					"name": "Legendary Resistance (1/Day)",
+					"entries": [
+						"If the Kallazandra fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Staff",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d6 + 3}) bludgeoning damage, or 3 ({@damage 1d8 + 1}) bludgeoning damage if used with two hands, plus 3 ({@damage 1d6}) poison damage."
+					]
+				},
+				{
+					"name": "Tentacle (Tentacles of the Deep)",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}2 ({@damage 2d8 + 4}) cold damage, and its speed is reduced by 10 feet until the start of your next turn."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious",
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AQ",
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"C",
+				"I"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"tokenUrl": "https://media.discordapp.net/attachments/535237491314262036/1096505399752020078/Lasandra_Token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://media.discordapp.net/attachments/535237491314262036/1096503391150149632/f4a8addec4bb3ebd8d73afaa03b94415.png?width=258&height=434"
+						}
+					}
+				]
+			},
+			"page": 0,
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"F",
+				"I",
+				"L",
+				"N",
+				"O",
+				"T"
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"preNote": "nonmagical",
+					"note": "(from stoneskin)"
+				},
+				{
+					"resist": [
+						"lightning",
+						"thunder"
+					],
+					"note": "(from storm sorcerer)"
+				},
+				{
+					"resist": [
+						"cold"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Stormy Retreat",
+					"entries": [
+						"Swirling blasts of elemental air briefly surround you immediately before or after casting a spell of 1st level or higher. This allows you to fly up to 15 feet without provoking attacks of opportunity."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"legendary": [
+				{
+					"name": "Cast Lesser Spell",
+					"entries": [
+						"Kallazandra casts a spell of 2rd level or lower."
+					]
+				},
+				{
+					"name": "Cast Greater Spell (3 actions)",
+					"entries": [
+						"Kallazandra casts a spell"
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"Kallazandra makes one Tentacle attack."
+					]
+				}
+			],
+			"actionTags": [
+				"Tentacles"
+			],
+			"reaction": [
+				{
+					"name": "Protection from the Deeps",
+					"entries": [
+						"When you or a creature you c",
+						"an see takes damage while within 10 feet of the tentacle, you can use your reaction to choose one of those creatures and reduce the damage to that creature by {@dice 1d8}. "
+					]
+				}
+			]
+		}
+	]
+}
