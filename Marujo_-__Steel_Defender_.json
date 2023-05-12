@@ -1,0 +1,127 @@
+{
+	"siteVersion": "1.181.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "ProjectCriticalBastards",
+				"abbreviation": "PCB",
+				"full": "Project Critical Bastards",
+				"url": "",
+				"authors": [
+					"Fergulho"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1683931877,
+		"dateLastModified": 1683931877
+	},
+	"monster": [
+		{
+			"name": "Marujo - (Steel Defender)",
+			"source": "ProjectCriticalBastards",
+			"page": 19,
+			"summonedByClass": "Artificer|TCE",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "20"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 14,
+			"int": 4,
+			"wis": 10,
+			"cha": 6,
+			"save": {
+				"dex": "+5",
+				"con": "+6"
+			},
+			"skill": {
+				"athletics": "+6",
+				"perception": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages you speak"
+			],
+			"pbNote": "4",
+			"trait": [
+				{
+					"name": "Vigilant",
+					"entries": [
+						"The defender can't be {@quickref Surprise|PHB|3|0|surprised}."
+					]
+				}
+			],
+			"actionNote": "Requires Your Bonus Action",
+			"action": [
+				{
+					"name": "Force-Empowered Rend",
+					"entries": [
+						"{@atk mw} {@hit +4} to hit, reach 5 ft., one target you can see. {@h}{@damage 1d8 + 4} force damage."
+					]
+				},
+				{
+					"name": "Repair (3/Day)",
+					"entries": [
+						"The magical mechanisms inside the defender restore {@dice 2d8 + 4} hit points to itself or to one construct or object within 5 feet of it."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Deflect Attack",
+					"entries": [
+						"The defender imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it, provided the attack roll is against a creature other than the defender."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"N"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluffImages": true,
+			"tokenUrl": "https://i.imgur.com/T5cs9hz.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/564x/ac/ed/7f/aced7f47accdca3c74940f8c90678bd4.jpg"
+						}
+					}
+				]
+			}
+		}
+	]
+}
