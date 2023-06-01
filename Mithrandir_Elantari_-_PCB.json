@@ -1,0 +1,312 @@
+{
+	"siteVersion": "1.181.3",
+	"_meta": {
+		"sources": [
+			{
+				"json": "ProjectCriticalBastards",
+				"abbreviation": "PCB",
+				"full": "Project Critical Bastards",
+				"url": "",
+				"authors": [
+					"Fergulho"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1685654750,
+		"dateLastModified": 1685654750
+	},
+	"monster": [
+		{
+			"name": "Mithrandir Elantari - PCB",
+			"environment": [
+				"any"
+			],
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"shadow fey"
+				]
+			},
+			"source": "ProjectCriticalBastards",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "22d8 + 44",
+				"average": 143
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 14,
+			"int": 12,
+			"wis": 17,
+			"cha": 20,
+			"save": {
+				"wis": "+7",
+				"cha": "+9",
+				"dex": "+7"
+			},
+			"skill": {
+				"arcana": "+9",
+				"deception": "+13",
+				"perception": "+11",
+				"persuasion": "+13",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 21,
+			"languages": [
+				"Common",
+				"Elvish",
+				"Umbral"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"Mithrandir has advantage on saving throws against being {@condition charmed}, and magic can't put her to sleep."
+					]
+				},
+				{
+					"name": "Traveler in Darkness",
+					"entries": [
+						"Mithrandir has advantage on Intelligence ({@skill Arcana}) checks made to know about shadow roads and shadow magic spells or items."
+					]
+				},
+				{
+					"name": "Sorcery points",
+					"entries": [
+						"The Mithrandir has 11 sorcery points. It can spend 1 or more sorcery points as a bonus action to gain one of the following benefits:",
+						"Heightened Spell: When the Kallazandra casts a spell that forces a creature to make a saving throw to resist the spell's effects, the Kallazandra can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw against the spell.",
+						"Quickened Spell: When the Kallazandra casts a spell that has a casting time of 1 action, the Kallazandra can spend 2 sorcery points to change the casting time to 1 bonus action for this casting."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The shadow fey makes two rapier attacks."
+					]
+				},
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage plus 17 ({@damage 5d6}) psychic damage."
+					]
+				},
+				{
+					"name": "Beguiling Whispers {@recharge 5}",
+					"entries": [
+						"The Mithrandir speaks sweet words to a creature she can see within 60 feet, that can hear the enchantress. The creature must succeed on a {@dc 15} Charisma saving throw or be {@condition charmed} for 1 minute. While {@condition charmed} in this way, the creature has disadvantage on Wisdom and Charisma saving throws made to resist spells cast by the enchantress."
+					]
+				},
+				{
+					"name": "Leadership (Recharges after a Short or Long Rest)",
+					"entries": [
+						"The enchantress can utter a special command or warning to a creature she can see within 30 feet of her. The creature must not be hostile to the enchantress and it must be able to hear (the command is inaudible to all but the target creature). For 1 minute, the creature adds {@dice 1d4} to its attack rolls and saving throws. A creature can benefit from only one enchantress's Leadership at a time. This effect ends if the enchantress is {@condition incapacitated}."
+					]
+				}
+			],
+			"page": 171,
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Mithrandir innate spellcasting ability is Charisma. She can cast the following spells innately, requiring no material components:"
+					],
+					"daily": {
+						"4": [
+							"{@spell misty step} (when in shadows, dim light, or darkness only)"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Mithrandir is a 11th-level spellcaster. Her spellcasting ability is Charisma (save {@dc 17}, {@hit 8} to hit with spell attacks). She knows the following bard spells."
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell blade ward}",
+								"{@spell friends}",
+								"{@spell message}",
+								"{@spell vicious mockery}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell bane}",
+								"{@spell charm person}",
+								"{@spell faerie fire}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell enthrall}",
+								"{@spell hold person}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell conjure fey}",
+								"{@spell fear}",
+								"{@spell hypnotic pattern}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell confusion}",
+								"{@spell greater invisibility}",
+								"{@spell phantasmal killer}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell animate objects}",
+								"{@spell dominate person}",
+								"{@spell hold monster}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/d74cHjh.png",
+			"fluff": {
+				"entries": [
+					"This ravishing shadow fey woman moves with alluring grace. Her voice rings like a bell, and in her hearing worldly cares and sorrows melt away.",
+					"Beyond even great physical beauty, the sheer presence of a shadow fey enchantress can lay the most stalwart foes low. Enchantresses live up to their name; almost universally female, they are beautiful beyond compare. Only if they wish it could they ever be mistaken for common shadow fey.",
+					"Enchantresses are also powerful spellcasters who infuse their words and manner with the beguiling power of shadow to turn enemies against one another with a few words and a deadly smile. They augment the force of their minds with fey-wrought blades, infusing their weapons with power that shreds their victims' psyche as well as their flesh.",
+					{
+						"type": "section",
+						"name": "Shadow Fey",
+						"entries": [
+							{
+								"type": "quote",
+								"entries": [
+									"Kind words open even iron doors"
+								],
+								"by": "Twilight, a courtier to the shadow fey"
+							},
+							"To most, the shadow fey are little more than a dancing shadow among the leaves. To savants, they are the creatures that taught the shadowdancers all they know, and kept many secrets to themselves. They were once elves like all others, dwelling in mortal lands beneath the sun. An ancient catastrophe drove them to darkness, and now they are creatures of the shadow. Though they can be found on the Material Plane, they are inextricably tied to the plane of Shadows, and that is the seat of their power and culture.",
+							"Shadow fey superficially resemble other elves, but they're rarely mistaken for their lighted cousins. Skin tones among the shadow fey range from alabaster white to ebony black, with varying shades of gray in between, but they are otherwise lacking in color. A few have a scintillating shimmer to their skin. Many shadow fey grow horns that sweep out from their hair, varying in size from subtle nubs to obvious spikes. Others have shocking sets of teeth.",
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Dual Natured",
+												"entries": [
+													"The shadow fey are contradictory beings. They boast some of the best features of elves, tempered by aspects of a fouler nature. They can be deliberate and purposeful, but they're also given to perplexing whimsy. Mortal creatures trying to fathom shadow fey motivations are in for a maddening experience; they are often illogical, capricious, and seemingly thrive on annoying others."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Split Rulership",
+												"entries": [
+													"The Summer Court and Winter Court each rule the shadow fey in the appropriate season. The turning of these seasons follows no clear calendar or schedule, though it is skewed toward summer. The Queen of Night and Magic and the Moonlit King each claim dominion in turn, ruling over the Summer and Winter courts respectively.",
+													"Other fey call them the Scáthsidhe (pronounced scAH-shee), or shadow faeries, and they are usually counted among the unseelie, though they would dispute that characterization. They simply call themselves part of the sidhe, and consider themselves an extension of the Seelie Court."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "The Reach of Darkness",
+												"entries": [
+													"Their bond with darkness allows the shadow fey to slip through distant spaces, traversing darkness itself from one place to another. Not only can every shadow fey slip from a shadow or patch of darkness to instantly appear elsewhere, they also control the mysterious and powerful shadow roads. Shadow roads are magical pathways that connect points on the Material Plane by dipping through the plane of shadow, allowing rapid and completely secret travel for the fey—and more importantly, for their weapons of war, their trade goods, and their allies.",
+													"The shadow fey all have an instinctive understanding of how a shadow road functions, and they are adept at both operating the entrance portals and navigating any hazards on the road. This bond with darkness has a price, of course, and the shadow fey shun the sun's light."
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/564x/0c/0e/5d/0c0e5daa4b676ab031adc9b6228f082e.jpg"
+						}
+					}
+				]
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"spellcastingTags": [
+				"I",
+				"CB"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"paralyzed",
+				"frightened",
+				"incapacitated",
+				"invisible"
+			],
+			"damageTagsSpell": [
+				"B",
+				"P",
+				"S",
+				"Y"
+			]
+		}
+	]
+}
