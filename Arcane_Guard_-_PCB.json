@@ -1,0 +1,205 @@
+{
+	"siteVersion": "1.181.3",
+	"_meta": {
+		"sources": [
+			{
+				"json": "ProjectCriticalBastards",
+				"abbreviation": "PCB",
+				"full": "Project Critical Bastards",
+				"url": "",
+				"authors": [
+					"Fergulho"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1685647865,
+		"dateLastModified": 1685647865
+	},
+	"monster": [
+		{
+			"name": "Arcane Guard - PCB",
+			"source": "ProjectCriticalBastards",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 55,
+				"formula": "10d8 + 10"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 12,
+			"int": 12,
+			"wis": 11,
+			"cha": 16,
+			"skill": {
+				"perception": "+2",
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Elvish",
+				"Undercommon"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The drow's innate spellcasting ability is Charisma (spell save {@dc 14}). The drow can innately cast the following spells, without providing material components:"
+					],
+					"will": [
+						"{@spell dancing lights}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell darkness}",
+							"{@spell faerie fire}",
+							"{@spell levitate} (self only)"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The drow is a 6th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It has the following sorcerer spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell minor illusion}",
+								"{@spell poison spray}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell shield}",
+								"{@spell thunderwave}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell mirror image}",
+								"{@spell scorching ray}",
+								"{@spell web}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell lightning bolt}"
+							]
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The drow has advantage on saving throws against being {@condition charmed}, and magic can't put the drow to sleep."
+					]
+				},
+				{
+					"name": "Sorcery Points",
+					"entries": [
+						"The drow has 6 sorcery points. It can spend 1 or more sorcery points as a bonus action to gain one of the following benefits:",
+						"Empowered Spell: When the drow rolls damage for a spell, it can spend 1 sorcery point to reroll up to 3 damage dice. It must use the new rolls. It can use Empowered Spell even if it has already used a different Metamagic option during the casting of the spell.",
+						"Quickened Spell: When the drow casts a spell that has a casting time of 1 action, the drow can spend 2 sorcery points to change the casting time to 1 bonus action for this casting."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The drow makes two Longsword attacks."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 3}) slashing damage, or 7 ({@damage 1d10 + 3}) slashing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"E",
+				"U"
+			],
+			"damageTags": [
+				"S"
+			],
+			"spellcastingTags": [
+				"I",
+				"CS"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"page": 0,
+			"damageTagsSpell": [
+				"F",
+				"I",
+				"L",
+				"T"
+			],
+			"tokenUrl": "https://i.imgur.com/GzVuaTC.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/564x/47/d5/49/47d549edab25345028a20e173a26f700.jpg"
+						}
+					}
+				]
+			}
+		}
+	]
+}
